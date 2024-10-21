@@ -4,11 +4,12 @@
         background-color: rgba(0, 0, 0, 0.5);
         /* Starts with semi-transparent */
         transition: background-color 0.5s ease;
+        z-index: 999;
     }
 
     /* Background color transition on scroll */
     .navbar.scrolled {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(15, 15, 15, 0.905);
         /* Fully opaque when scrolled */
     }
 
@@ -71,16 +72,16 @@
     <div class="w-100 hidden lg:block">
         <ul class="flex gap-10">
             <li class="text-white">
-                <a href="/home">Home</a>
+                <a href="#home">Home</a>
             </li>
             <li class="text-white">
-                <a href="/projects">My Projects</a>
+                <a href="#myskills">My Skills</a>
             </li>
             <li class="text-white">
-                <a href="/aboutme">About Me</a>
+                <a href="#myprojects">My Projects</a>
             </li>
             <li class="text-white">
-                <a href="/contact">Contact Us</a>
+                <a href="#contactme">Contact Me</a>
             </li>
         </ul>
     </div>
