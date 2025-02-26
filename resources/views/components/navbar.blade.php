@@ -61,6 +61,18 @@
             width: auto;
         }
     }
+
+    .logo-animation {
+        font-family: 'Pacifico', cursive;
+        /* Apply unique font family to the logo */
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition effect */
+    }
+
+    .logo-animation:hover {
+        transform: scale(1.1);
+        /* Slightly enlarge the logo on hover */
+    }
 </style>
 <div class="navbar bg-galaxy py-3 flex items-center fixed top-0 w-full">
     <div class="w-50 mx-10 lg:mx-20">

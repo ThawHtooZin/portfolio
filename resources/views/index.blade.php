@@ -110,6 +110,11 @@
         overflow-x: hidden;
         overflow-y: auto;
     }
+
+    body {
+        font-family: 'IBM Plex Sans', sans-serif;
+        /* Apply the cool font family to the whole website */
+    }
 </style>
 
 <x-layout>
@@ -140,7 +145,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4">
                 <div
-                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card">
+                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card hover:bg-gray-700">
 
                     <h1 class="text-white text-center text-xl font-bold mb-4">Front-end Development</h1>
                     <div class="mb-4">
@@ -196,7 +201,7 @@
                 </div>
 
                 <div
-                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card">
+                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card hover:bg-gray-700">
                     <h1 class="text-white text-center text-xl font-bold mb-4">Back-end Development</h1>
                     <div class="mb-4">
                         <label class="text-white">PHP</label>
@@ -231,7 +236,7 @@
                 </div>
 
                 <div
-                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card">
+                    class="bg-gray-800 p-6 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.2)] opacity-0 transform translate-y-10 transition-all duration-500 ease-in-out card hover:bg-gray-700">
                     <h1 class="text-white text-center text-xl font-bold mb-4">Web Tools</h1>
                     <div class="mb-4">
                         <label class="text-white">Figma</label>
@@ -282,7 +287,7 @@
 
 
         {{-- My Projects Page --}}
-        <div class="scroll-pt-24 pt-24 sm:pt-2 min-h-screen flex flex-col justify-center from-primary bg-gradient-to-b to-galaxy bg-cover sm:py-auto"
+        <div class="scroll-pt-32 pt-24 sm:pt-8 min-h-screen flex flex-col justify-center from-primary bg-gradient-to-b to-black bg-cover sm:py-auto"
             id="myprojects">
             <h1 class="text-center text-4xl text-white glow-loop mb-8">My Projects</h1>
 
@@ -293,7 +298,7 @@
                 <div class="swiper-wrapper">
                     <!-- Swiper Slide -->
                     <div
-                        class="swiper-slide sm:p-10 p-2 bg-slate-500 border rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.6)] text-white transition-all duration-300 ease-in-out transform">
+                        class="swiper-slide sm:p-10 p-2 bg-gradient-to-b from-blue-800 via-indigo-900 border rounded-lg shadow-md text-white transition-all duration-300 ease-in-out transform">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <!-- Project Image -->
                             <div class="sm:p-10">
@@ -322,7 +327,7 @@
                         </div>
                     </div>
                     <div
-                        class="swiper-slide p-10 bg-slate-500 border rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.6)] text-white transition-all duration-300 ease-in-out transform">
+                        class="swiper-slide sm:p-10 p-2 bg-gradient-to-b from-blue-800 via-indigo-900 border rounded-lg shadow-md text-white transition-all duration-300 ease-in-out transform">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <!-- Project Image -->
                             <div class="sm:p-10">
@@ -345,14 +350,14 @@
                                     Though inspired by the original, this version introduces thoughtful improvements to
                                     better suit specific business needs.
                                 </p>
-                                <x-primary-btn href="https://github.com/ThawHtooZin/Aronium-POS-own"
-                                    target="__blank">View
-                                    Detail</x-primary-btn>
+                                <x-primary-btn href="https://github.com/ThawHtooZin/Aronium-POS-own" target="__blank">
+                                    <i class="bi bi-github"></i> View GitHub
+                                </x-primary-btn>
                             </div>
                         </div>
                     </div>
                     <div
-                        class="swiper-slide p-10 bg-slate-500 border rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.6)] text-white transition-all duration-300 ease-in-out transform">
+                        class="swiper-slide sm:p-10 p-2 bg-gradient-to-b from-blue-800 via-indigo-900 border rounded-lg shadow-md text-white transition-all duration-300 ease-in-out transform">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <!-- Project Image -->
                             <div class="sm:p-10">
@@ -376,8 +381,9 @@
                                     The clean design ensures ease of navigation, while the content emphasizes trust and
                                     professionalism in the recruitment process.
                                 </p>
-                                <x-primary-btn href="https://github.com/ThawHtooZin/Shwe-Bhone-Hein"
-                                    target="__blank">View Detail</x-primary-btn>
+                                <x-primary-btn href="https://github.com/ThawHtooZin/Shwe-Bhone-Hein" target="__blank">
+                                    <i class="bi bi-github"></i> View GitHub
+                                </x-primary-btn>
                                 <x-primary-btn href="https://shwebhonehein.com/" target="__blank" class="ml-2">Live
                                     Website</x-primary-btn>
                             </div>
@@ -390,6 +396,85 @@
         </div>
         {{-- My Projects Page --}}
 
+        {{-- Contact Me --}}
+        <div class=" pt-2 sm:pt-12 min-h-screen flex flex-col justify-center bg-black bg-cover sm:py-auto"
+            id="contactme">
+            <div class="bg-gradient-to-b from-black via-indigo-900 to-black min-h-screen py-10">
+                <div class="max-w-4xl mx-auto px-6">
+                    <!-- Contact Form -->
+                    <div class="bg-indigo-900 p-8 rounded-lg shadow-lg">
+                        <h2 class="text-white text-3xl font-bold mb-6 glow-loop">Get in Touch ✨</h2>
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-white text-lg font-semibold">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-30 text-white outline-none border border-transparent focus:border-indigo-500 transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-white text-lg font-semibold">Your
+                                    Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-30 text-white outline-none border border-transparent focus:border-indigo-500 transition">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-white text-lg font-semibold">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-30 text-white outline-none border border-transparent focus:border-indigo-500 transition"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-bold transition">Send
+                                    Message 🚀</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Social Media Section -->
+                    <div class="mt-12 flex justify-center space-x-6">
+                        <!-- Facebook Card -->
+                        <a href="https://facebook.com" target="_blank" class="group">
+                            <div
+                                class="relative w-20 h-20 bg-facebook rounded-lg shadow-lg transform transition-all group-hover:rotate-3 group-hover:-translate-y-2">
+                                <i
+                                    class="bi bi-facebook text-white text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 transition-opacity"></i>
+                                <p
+                                    class="absolute inset-0 text-white text-xs opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all text-center">
+                                    Follow me on Facebook!</p>
+                            </div>
+                        </a>
+
+
+                        <!-- Telegram Card -->
+                        <a href="https://telegram.com" target="_blank" class="group">
+                            <div
+                                class="relative w-20 h-20 bg-telegram rounded-lg shadow-lg transform transition-all group-hover:rotate-3 group-hover:-translate-y-2">
+                                <i
+                                    class="bi bi-telegram text-white text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 transition-opacity"></i>
+                                <p
+                                    class="absolute inset-0 text-white text-xs opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all text-center">
+                                    Chat with me on Telegram!</p>
+                            </div>
+                        </a>
+
+                        <!-- Instagram Card -->
+                        <a href="https://instagram.com" target="_blank" class="group">
+                            <div
+                                class="relative w-20 h-20 bg-instagram rounded-lg shadow-lg transform transition-all group-hover:rotate-3 group-hover:-translate-y-2">
+                                <i
+                                    class="bi bi-instagram text-white text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-0 transition-opacity"></i>
+                                <p
+                                    class="absolute inset-0 text-white text-xs opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all text-center">
+                                    Check out my Instagram!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        {{-- Contact Me --}}
+
+        <x-footer></x-footer>
     </main>
 </x-layout>
 
